@@ -1,4 +1,4 @@
-# GitStash
+# GitRequire
 
 - Creates a up-to-date requirements file for python Venv
 - Asks to add, commit and push
@@ -21,4 +21,4 @@ However, if a new library has been included in the Virtual environment the requi
 
 
 - Don't put a file extension on the file when creating
-- Include the git-stash file in the PATH
+- Include the directory in which the command resides in the path
