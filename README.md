@@ -1,5 +1,7 @@
 # GitStash
 
+![alt text](https://github.com/marmstr93ng/GitStash/Mustache-Image.png "Stash")
+
 - Creates a up-to-date requirements file for python Venv
 - Asks to add, commit and push
 
