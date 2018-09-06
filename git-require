@@ -13,7 +13,7 @@ git status
 while true; do
     read -p "Do you wish to add, commit and push changes?" yn
     case $yn in
-        [Yy]* ) read -p "Enter commit comment:" comment; [[ -z "${comment// }" ]] && echo No commit comment, command ignored! && exit 1; git add .; git commit -m "$comment"; git push; break;;
+        [Yy]* ) read -p "Enter commit comment:" comment; [[ -z "${comment// }" ]] && echo No commit comment, command ignored! && exit 1; git add .; git commit -m "$comment"; git push -u origin master; break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
