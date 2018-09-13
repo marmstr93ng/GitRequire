@@ -22,3 +22,12 @@ However, if a new library has been included in the Virtual environment the requi
 
 - Don't put a file extension on the file when creating
 - Include the directory in which the command resides in the path
+
+
+## To-Do
+1. Rename to git ship
+2. Add custom pip install cmd for venv
+3. Make python venv cmd module
+4. Write instructions on how to use - download, add to path
+
+Don't run from within an active venv (error, can't find file), script activates venv
