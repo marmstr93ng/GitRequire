@@ -27,7 +27,8 @@ However, if a new library has been included in the Virtual environment the requi
 ## To-Do
 1. Rename to git ship
 2. Add custom pip install cmd for venv
-3. Make python venv cmd module
-4. Write instructions on how to use - download, add to path
+3. Make this project about python venv cmd module
+4. Command to activate/deactivate with a single command (save cd down to scripts)
+5. Write instructions on how to use - download, add to path
 
 Don't run from within an active venv (error, can't find file), script activates venv
