@@ -32,3 +32,5 @@ However, if a new library has been included in the Virtual environment the requi
 5. Write instructions on how to use - download, add to path
 
 Don't run from within an active venv (error, can't find file), script activates venv
+
+Currently not being maintained due to the use of VS Code [ease of use](https://code.visualstudio.com/docs/python/environments).
