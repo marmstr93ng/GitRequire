@@ -34,3 +34,10 @@ However, if a new library has been included in the Virtual environment the requi
 Don't run from within an active venv (error, can't find file), script activates venv
 
 Currently not being maintained due to the use of VS Code [ease of use](https://code.visualstudio.com/docs/python/environments).
+
+
+# Pip Warm
+* Keep requirements.txt up-to-date
+* Pip freeze when installing or uninstalling packages
+* Ignore pylint and other specific packages
+[Ignore Packages](https://stackoverflow.com/questions/23640182/ignore-certain-packages-and-their-dependencies-with-pip-freeze)
