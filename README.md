@@ -27,6 +27,7 @@ However, if a new library has been included in the Virtual environment the requi
 
 ### How-to Create a Git Command Aliase:
 NOTE: Don't put a file extension on the file when creating
+NOTE: ```source "$(git --exec-path)/git-sh-setup"``` only available in .git dir
 
 [Sources]
 1. http://thediscoblog.com/blog/2014/03/29/custom-git-commands-in-3-steps/
