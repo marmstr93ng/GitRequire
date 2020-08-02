@@ -37,6 +37,8 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
+[Github Package Source](https://stackoverflow.com/questions/16584552/how-to-state-in-requirements-txt-a-direct-github-source)
+
 However, if a new library has been included in the Virtual environment the requirements.txt will need to be updated. Remembering to do this manually could be problematic instead the requirements file should be updated and added to the commit if there is a change!
 
 #### How-to Create a Git Command Aliase:
