@@ -6,7 +6,7 @@ Custom command scripts to speed up development
 3. Copy desired commands into C:\Program Files\Git\cmd
 4. Execute by running ```git <cmd name>```
 
-## GitShip
+## CMD > GitShip
 
 - Creates a up-to-date requirements file for python Venv
 - Asks to add, commit and push
