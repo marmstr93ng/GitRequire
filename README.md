@@ -20,16 +20,9 @@ NOTE: Don't run from within an active venv (error, can't find file), script acti
 1. Create a blank github repo
 2. Run ```git python-env <repo-name>``` in the directory where the local copy is to be stored
 
----
+## CMD > Git Frigid/Warm
 
-## To-Do
-1. Add custom pip install cmd for venv (See Pip Frigid)
-2. Command to activate/deactivate with a single command (save cd down to scripts)
-
-### (1) Pip Frigid
-* Keep requirements.txt up-to-date
-* Pip freeze when installing or uninstalling packages
-* Ignore pylint and other specific packages [Ignore Packages](https://stackoverflow.com/questions/23640182/ignore-certain-packages-and-their-dependencies-with-pip-freeze)
+- Activate Venv, install/uninstall package and update requirements.txt
 
 ---
 
@@ -43,6 +36,8 @@ pip freeze > requirements.txt
 ```
 pip install -r requirements.txt
 ```
+
+[Github Package Source](https://stackoverflow.com/questions/16584552/how-to-state-in-requirements-txt-a-direct-github-source)
 
 However, if a new library has been included in the Virtual environment the requirements.txt will need to be updated. Remembering to do this manually could be problematic instead the requirements file should be updated and added to the commit if there is a change!
 
