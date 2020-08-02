@@ -6,14 +6,35 @@ Custom command scripts to speed up development
 3. Copy desired commands into C:\Program Files\Git\cmd
 4. Execute by running ```git <cmd name>```
 
-## CMD > GitShip
+## CMD > Git Ship
 
 - Creates a up-to-date requirements file for python Venv
 - Asks to add, commit and push
 
 NOTE: Don't run from within an active venv (error, can't find file), script activates venv
 
-### Python Virtual Enviroment
+## CMD > Git Python-env
+
+- Sets up a new python repository based on [PythonTemplate](https://github.com/marmstr93ng/PythonTemplate.git)
+
+1. Create a blank github repo
+2. Run ```git python-env <repo-name>``` in the directory where the local copy is to be stored
+
+---
+
+## To-Do
+1. Add custom pip install cmd for venv (See Pip Frigid)
+2. Command to activate/deactivate with a single command (save cd down to scripts)
+
+### (1) Pip Frigid
+* Keep requirements.txt up-to-date
+* Pip freeze when installing or uninstalling packages
+* Ignore pylint and other specific packages [Ignore Packages](https://stackoverflow.com/questions/23640182/ignore-certain-packages-and-their-dependencies-with-pip-freeze)
+
+---
+
+# Info
+#### Python Virtual Enviroment
 - Generate a python requirements file which contains all the python libraries used in the project.
 ```
 pip freeze > requirements.txt
@@ -25,24 +46,10 @@ pip install -r requirements.txt
 
 However, if a new library has been included in the Virtual environment the requirements.txt will need to be updated. Remembering to do this manually could be problematic instead the requirements file should be updated and added to the commit if there is a change!
 
-### How-to Create a Git Command Aliase:
+#### How-to Create a Git Command Aliase:
 NOTE: Don't put a file extension on the file when creating
 NOTE: ```source "$(git --exec-path)/git-sh-setup"``` only available in .git dir
 
 [Sources]
 1. http://thediscoblog.com/blog/2014/03/29/custom-git-commands-in-3-steps/
 2. https://coderwall.com/p/bt93ia/extend-git-with-custom-commands
-
-
-## To-Do
-1. Add custom pip install cmd for venv (See Pip Warm)
-2. Command to activate/deactivate with a single command (save cd down to scripts)
-3. Write instructions on how to use - download, add to path
-
-Currently not being maintained due to the use of VS Code [ease of use](https://code.visualstudio.com/docs/python/environments).
-
-### (1)Pip Warm
-* Keep requirements.txt up-to-date
-* Pip freeze when installing or uninstalling packages
-* Ignore pylint and other specific packages
-[Ignore Packages](https://stackoverflow.com/questions/23640182/ignore-certain-packages-and-their-dependencies-with-pip-freeze)
