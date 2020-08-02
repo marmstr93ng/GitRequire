@@ -1,0 +1,22 @@
+#!/bin/bash
+
+((!$#)) && echo No repo name, command ignored! && exit 1
+
+git clone https://github.com/marmstr93ng/$1.git
+
+git clone https://github.com/marmstr93ng/PythonTemplate.git temp
+cp -a temp/logging $1
+cp temp/{.gitignore,LICENSE,main.py,README.md} $1
+rm -rf temp
+
+cd $1
+rm README.md
+echo "# $1" > README.md
+
+git add .;
+git commit -m "first commit";
+git push -u origin master
+
+echo ""
+echo "Python virtual enviroment initialising..."
+python -m venv venv
