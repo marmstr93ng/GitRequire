@@ -24,6 +24,10 @@ NOTE: Don't run from within an active venv (error, can't find file), script acti
 
 - Activate Venv, install/uninstall package and update requirements.txt
 
+## CMD > Git install-req
+
+- Activate Venv, installs packages specified in requirements.txt
+
 ---
 
 # Info
