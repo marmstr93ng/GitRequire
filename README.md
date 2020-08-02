@@ -1,4 +1,12 @@
-# GitShip
+# SHORTCUT
+Custom command scripts to speed up development
+
+1. Add C:\Program Files\Git\cmd to path ("enviromental variables")
+2. Download Zip of this repo
+3. Copy desired commands into C:\Program Files\Git\cmd
+4. Execute by running ```git <cmd name>```
+
+## GitShip
 
 - Creates a up-to-date requirements file for python Venv
 - Asks to add, commit and push
@@ -18,8 +26,7 @@ pip install -r requirements.txt
 However, if a new library has been included in the Virtual environment the requirements.txt will need to be updated. Remembering to do this manually could be problematic instead the requirements file should be updated and added to the commit if there is a change!
 
 ### How-to Create a Git Command Aliase:
-- Don't put a file extension on the file when creating
-- Include the directory in which the command resides in the path
+NOTE: Don't put a file extension on the file when creating
 
 [Sources]
 1. http://thediscoblog.com/blog/2014/03/29/custom-git-commands-in-3-steps/
@@ -33,8 +40,7 @@ However, if a new library has been included in the Virtual environment the requi
 
 Currently not being maintained due to the use of VS Code [ease of use](https://code.visualstudio.com/docs/python/environments).
 
-
-# Pip Warm
+### (1)Pip Warm
 * Keep requirements.txt up-to-date
 * Pip freeze when installing or uninstalling packages
 * Ignore pylint and other specific packages
