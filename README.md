@@ -12,8 +12,9 @@ NOTE: Don't run from within an active venv (error, can't find file), script acti
 
 - Sets up a new python repository based on [PythonTemplate](https://github.com/marmstr93ng/PythonTemplate.git)
 
-1. Create a blank github repo
-2. Run ```git python-env <repo-name>``` in the directory where the local copy is to be stored
+1. Create repository in github - No additional files
+2. Navigate to desire local repository location
+3. Run ```git python-env <repo-name>``` in the directory where the local copy is to be stored
 
 ## CMD > Git setup-clone
 
