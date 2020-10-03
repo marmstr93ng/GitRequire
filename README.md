@@ -6,11 +6,6 @@ Custom command scripts to speed up development
 3. Copy desired commands into C:\Program Files\Git\cmd
 4. Execute by running ```git <cmd name>```
 
-## CMD > Git Ship
-
-- Creates a up-to-date requirements file for python Venv
-- Asks to add, commit and push
-
 NOTE: Don't run from within an active venv (error, can't find file), script activates venv
 
 ## CMD > Git Python-env
@@ -20,30 +15,32 @@ NOTE: Don't run from within an active venv (error, can't find file), script acti
 1. Create a blank github repo
 2. Run ```git python-env <repo-name>``` in the directory where the local copy is to be stored
 
-## CMD > Git Frigid/Warm
+## CMD > Git setup-clone
 
-- Activate Venv, install/uninstall package and update requirements.txt
+- Clones a specified repo
+
+1. Run ```git setup-clone <repo-name>``` in the directory where the local copy is to be stored
+
+## CMD > Git setup-python-clone
+
+- Clones a the specified repo, setups up python virtual enviroment and installs packages specified in requirements.txt (runs ```git install-req```
+
+1. Run ```git setup-clone <repo-name>``` in the directory where the local copy is to be stored
 
 ## CMD > Git install-req
 
 - Activate Venv, installs packages specified in requirements.txt
 
+## CMD > Git Ship
+
+- Creates a up-to-date requirements file for python Venv
+- Asks to add, commit and push
+
+## CMD > Git Frigid/Warm
+
+- Activate Venv, install/uninstall package and update requirements.txt
+
 ---
-
-# Info
-#### Python Virtual Enviroment
-- Generate a python requirements file which contains all the python libraries used in the project.
-```
-pip freeze > requirements.txt
-```
-- use virtual enviroments to create a specific python interpreter instance
-```
-pip install -r requirements.txt
-```
-
-[Github Package Source](https://stackoverflow.com/questions/16584552/how-to-state-in-requirements-txt-a-direct-github-source)
-
-However, if a new library has been included in the Virtual environment the requirements.txt will need to be updated. Remembering to do this manually could be problematic instead the requirements file should be updated and added to the commit if there is a change!
 
 #### How-to Create a Git Command Aliase:
 NOTE: Don't put a file extension on the file when creating
