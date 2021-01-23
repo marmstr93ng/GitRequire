@@ -8,40 +8,40 @@ Custom command scripts to speed up development
 
 NOTE: Don't run from within an active venv (error, can't find file), script activates venv
 
-## CMD > Git Python-env
+## CMD > git new-python-prj
 
 - Sets up a new python repository based on [PythonTemplate](https://github.com/marmstr93ng/PythonTemplate.git)
 
 1. Create repository in github - No additional files
 2. Navigate to desire local repository location
-3. Run ```git python-env <repo-name>``` in the directory where the local copy is to be stored
+3. Run ```git new-python-prj <repo-name> <local-name (optional)>``` in the directory where the local copy is to be stored
 
-## CMD > Git setup-clone
+## CMD > git exist-clone
 
 - Clones a specified repo
 
-1. Run ```git setup-clone <repo-name>``` in the directory where the local copy is to be stored
+1. Run ```git exist-clone <repo-name> <local-name (optional)>``` in the directory where the local copy is to be stored
 
-## CMD > Git setup-python-clone
+## CMD > git exist-clone-python
 
-- Clones a specified repo, setups up python virtual enviroment and installs packages specified in requirements.txt (runs ```git install-req```
+- Clones a specified repo, setups up python virtual enviroment and installs packages specified in requirements.txt (runs ```git install-req```)
 
-1. Run ```git setup-python-clone <repo-name>``` in the directory where the local copy is to be stored
+1. Run ```git exist-clone-python <repo-name> <local-name (optional)>``` in the directory where the local copy is to be stored
 
-## CMD > Git install-req
+## CMD > git install-req
 
 - Activate Venv, installs packages specified in requirements.txt
 
-## CMD > Git Ship
+## CMD > git ship
 
 - Creates a up-to-date requirements file for python Venv
 - Asks to add, commit and push
 
-## CMD > Git Frigid
+## CMD > git frigid
 
 - Activate Venv, ***install package*** and update requirements.txt
 
-## CMD > Git Warm
+## CMD > git warm
 
 - Activate Venv, ***uninstall package*** and update requirements.txt
 
