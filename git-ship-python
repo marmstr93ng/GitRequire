@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source "$(git --exec-path)/git-sh-setup"
+
+cd venv/scripts
+
+source activate
+cd ../..
+pip freeze > requirements.txt
+
+git status
+
+git ship
