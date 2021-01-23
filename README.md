@@ -34,6 +34,10 @@ NOTE: Don't run from within an active venv (error, can't find file), script acti
 
 ## CMD > git ship
 
+- Asks to add, commit and push
+
+## CMD > git ship-python
+
 - Creates a up-to-date requirements file for python Venv
 - Asks to add, commit and push
 
