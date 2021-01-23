@@ -24,7 +24,7 @@ NOTE: Don't run from within an active venv (error, can't find file), script acti
 
 ## CMD > Git setup-python-clone
 
-- Clones a the specified repo, setups up python virtual enviroment and installs packages specified in requirements.txt (runs ```git install-req```
+- Clones a specified repo, setups up python virtual enviroment and installs packages specified in requirements.txt (runs ```git install-req```
 
 1. Run ```git setup-python-clone <repo-name>``` in the directory where the local copy is to be stored
 
